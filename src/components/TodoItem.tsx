@@ -30,8 +30,8 @@ export default function TodoItem({ todo }: TodoItemProps) {
     >
       <li className={`TodoItem ${todo.done ? 'text-gray-500 line-through ' : ''}`}>
         <label>
-          <input type="checkbox" defaultChecked={todo.done} onChange={onToggle} />
-          <span className="text ml-4 text-sm font-normal">{todo.text}</span>
+          <input type="checkbox" defaultChecked={todo.done} onChange={onToggle} className="m-2 h-4 w-4" />
+          <span className="text m-2 text-sm font-normal">{todo.text}</span>
         </label>
 
         <div className="float-right flex items-center  text-gray-500">

@@ -1,13 +1,3 @@
-// import { combineReducers } from 'redux';
-// import todo from './Todo';
-
-// const rootReducer = combineReducers({
-//   todo,
-// });
-
-// export default rootReducer;
-// export type RootState = ReturnType<typeof rootReducer>;
-
 import { combineReducers } from 'redux';
 import todo, { TodosState } from './Todo';
 import { persistReducer } from 'redux-persist';
