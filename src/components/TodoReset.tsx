@@ -8,15 +8,15 @@ export default function TodoReset() {
   const handleReset = () => {
     dispatch(resetTodo());
   };
+
   const uncheckedTodoCount = useUncheckedTodoCount();
+
   return (
-    <div className="m-2 flex items-center justify-between text-sm text-gray-500">
-      <p>{`할 일 : ${uncheckedTodoCount} 개`} </p>
-      <div className="flex items-center ">
-        <span className="material-symbols-outlined text-base">cancel</span>
-        <button onClick={handleReset} className="ml-1">
-          초기화
-        </button>
+    <div className="justify-betweentext-sm absolute bottom-8 m-2 flex w-full items-center text-sm font-medium text-gray-500">
+      <p className="">{`할 일 : ${uncheckedTodoCount} 개`}</p>
+      <div className="absolute right-16 mt-2 flex items-center">
+        <span className="material-symbols-outlined mr-1 text-base">cancel</span>
+        <button onClick={handleReset}>초기화</button>
       </div>
     </div>
   );

@@ -4,11 +4,10 @@ import TodoItem from './TodoItem';
 function TodoList() {
   const todos = useTodos();
   return (
-    <ul className="relative max-h-96 flex-col flex-wrap overflow-y-auto ">
+    <ul className="max-h-9flex-wrap relative flex-col overflow-y-auto" style={{ maxHeight: '400px' }}>
       {todos.map(todo => (
         <TodoItem todo={todo} key={todo.id} />
       ))}
-      <div className=""></div>
     </ul>
   );
 }
