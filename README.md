@@ -1,6 +1,5 @@
-# TodoList with react-redux, typescript, tailwind CSS
+## TodoList with react-redux, typescript, tailwind CSS
 
----
 
 ## Available Scripts
 
