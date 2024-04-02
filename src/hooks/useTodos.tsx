@@ -1,9 +1,11 @@
-import { useSelector } from 'react-redux';
+import { TypedUseSelectorHook, useSelector } from 'react-redux';
 import { RootState } from '../store/reducers';
 import { Todo } from '../store/reducers/Todo';
 
+export const useTodoSelector: TypedUseSelectorHook<RootState> = useSelector;
+
 export default function useTodos() {
-  const todos = useSelector((state: RootState) => state.todo);
+  const todos = useTodoSelector(state => state.todo);
   const sortUncheckedTodos = (todos: Todo[]) => {
     return todos
       .filter(todo => !todo.done)

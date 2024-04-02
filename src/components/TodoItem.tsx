@@ -37,10 +37,10 @@ export default function TodoItem({ todo }: TodoItemProps) {
               onChange={handleInputChange}
               onBlur={handleUpdate}
               onKeyDown={handleKeyDown}
-              className="text w-80 border-b border-gray-400 text-sm font-normal outline-none focus:w-80 focus:border-blue-400"
+              className="w-80 border-b border-gray-400 text-sm font-normal outline-none focus:w-80 focus:border-blue-400"
             />
           ) : (
-            <span className="text text-sm font-normal" onClick={handleToggleEdit}>
+            <span className="text text-base font-normal" onClick={handleToggleEdit}>
               {todo.text}
             </span>
           )}
